@@ -1,0 +1,190 @@
+.home-detail{
+    width: 100%;
+    background: #E5E5E5;
+}
+.home-detail .header{
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../Images/images/header\ bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.home-detail .header h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.9rem;
+    text-align: center;
+    color: #F1F6F4;
+}
+.home-detail .body{
+    padding: 70px 0;
+}
+.home-detail .body .main-house img{
+    width: 770px;
+    height: 380px;
+    margin-bottom: 3rem;
+}
+.home-detail .body .sub-house img{
+    width: 170px;
+    height: 111px;
+    margin-bottom: 3rem;
+}
+.home-detail .body .col-md-3 form{
+    background: #F4F4F4;
+    width: 37rem;
+    height: 52rem;
+}
+.home-detail .body .col-md-3 form input{
+    width: 331px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0015em;
+    color: #747474;
+}
+.home-detail .body .col-md-3 form textarea{
+    width: 331px;
+    height: 155px;
+    margin-top: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0015em;
+    color: #747474;
+}
+.home-detail .body .col-md-3 form input::placeholder,
+.home-detail .body .col-md-3 form textarea{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0015em;
+    color: #747474;
+}
+.home-detail .body .col-md-3 form .req-booking{
+    background: #275A53;
+    width: 33rem;
+    height: 5rem;
+    color: #F1F6F4;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0015em;
+    margin-top: 30px;
+}
+.home-detail .body .col-md-3 form .req-booking:hover{
+    background-color: #16322E;
+}
+.home-detail .body h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    letter-spacing: 0.0015em;
+    color: #16322E;
+}
+.home-detail .body span{
+    color:  #275A53;
+}
+.home-detail .body .home-des h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.0015em;
+    color: #16322E;
+    margin-bottom: 10px;
+}
+.home-detail .body .home-des p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.0015em;
+    color: #747474;
+    margin-bottom: 10px;
+}
+.col-md-8{
+    width: 77rem;
+}
+
+/* Responsive  */
+
+@media(max-width: 1100px){
+    .home-detail .body .col-md-3 form{
+        width: 35rem;
+        height: 52rem;
+    }
+    .home-detail .body .col-md-3 form input,
+    .home-detail .body .col-md-3 form textarea{
+        width: 30rem;
+        height: 5rem;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 928px){
+    .home-detail .header{
+        background-size: cover;
+
+    }
+    .home-detail .body .col-md-3 form{
+        width: 30rem;
+        height: 52rem;
+    }
+    .home-detail .body .col-md-3 form input,
+    .home-detail .body .col-md-3 form textarea{
+        width: 25rem;
+        height: 5rem;
+        margin-top: 20px;
+    }
+    .home-detail .body .col-md-3 form .req-booking{
+        width: 25rem;
+        height: 5rem;
+
+    }
+}
+@media(max-width: 768px){
+    .home-detail .body .col-md-3 form{
+        width: 37rem;
+        height: 52rem;
+        display: block;
+        margin: 50px auto;
+    }
+    .home-detail .body .col-md-3 form input{
+        width: 33rem;
+        height: 50px;
+    }
+    .home-detail .body .col-md-3 form textarea{
+        width: 33rem;
+        height: 155px;
+    }
+    .home-detail .body .home-des h3{
+        font-size: 2.8rem;
+    }
+    .home-detail .body .home-des p{
+        font-size: 1.8rem;
+        line-height: 3.8rem;
+    }
+    .home-detail .body h1{
+        font-size: 3.2rem;
+        line-height: 5.0rem;
+    }
+    .col-md-8{
+        margin: 0;
+        width: 100%;
+    } 
+}

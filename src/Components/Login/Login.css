@@ -1,0 +1,182 @@
+.login{
+    width: 100%;
+}
+.login .body .login-form{
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 530px;
+    height: 400px;
+    padding: 30px;
+}
+.login .body .login-form h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #000000;
+}
+.login .body .login-form input{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #C5C5C5;
+    border-radius: 0;
+    width: 46rem;
+    margin-top: 35px;
+}
+.login .body .login-form input::placeholder{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+}
+.login .body .login-form .link{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #275A53;
+}
+.login .body .login-form p,
+.login .body .login-form label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #000000;
+}
+.login .body .login-form .btn-submit{
+    width: 46rem;
+    height: 5rem;
+    background: #275A53;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.login .body .login-form .btn-submit:hover{
+    background: #1f443f;
+}
+.login .body .hr-text{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+}
+.login .body .hr-text::before,
+.login .body .hr-text::after{
+    background-color: #AAAAAA;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 250px;
+}
+.login .body .hr-text::before{
+    right: 0.5em;
+    margin-left: -50%;
+}
+.login .body .hr-text::after{
+    left: 0.5em;
+    margin-right: -50%;
+}
+.login .body .auth-login{
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 57px;
+    width: 46rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.login .body .auth-login img{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    /* justify-content: start; */
+}
+.login .body .auth-login p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+}
+#remember-me{
+    border: 1px solid black;
+    justify-content: start;
+}
+
+/* Responsive  */
+
+@media (max-width: 526px){
+    .login .body .login-form{
+        width: 100%;
+        height: 400px;
+        padding: 30px;
+    }
+    .login .body .login-form input{
+        width: 46rem;
+    }
+}
+@media (max-width: 454px){
+    .login .body .login-form input{
+        width: 40rem;
+    }
+    .login .body .login-form .btn-submit{
+        width: 40rem;
+    }
+}
+@media (max-width: 400px){
+    .login .body .login-form input{
+        width: 36rem;
+    }
+    .login .body .login-form .btn-submit{
+        width: 36rem;
+    }
+}
+@media (max-width: 360px){
+    .login .body .login-form input{
+        width: 32rem;
+    }
+    .login .body .login-form .btn-submit{
+        width: 32rem;
+    }
+}
+@media (max-width: 332px){
+    .login .body .login-form input{
+        width: 28rem;
+    }
+    .login .body .login-form .btn-submit{
+        width: 28rem;
+    }
+}
+@media (max-width: 288px){
+    .login .body .login-form input{
+        width: 22rem;
+    }
+    .login .body .login-form .btn-submit{
+        width: 22rem;
+    }
+}

@@ -1,0 +1,17 @@
+.container .booking-list-design{
+    background-color:#e1e7f3;
+    margin-top: 100px;
+    height: 85vh;
+    width: 100%;
+    border: 1px solid black;
+}
+.booking-sub-content{
+    margin: 15px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid red;
+}
+.book-head{
+    text-align: right;
+}

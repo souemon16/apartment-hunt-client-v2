@@ -1,0 +1,182 @@
+.registration{
+    width: 100%;
+    height: 130vh;
+}
+.registration .body .login-form{
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 530px;
+    height: 600px;
+    padding: 30px;
+}
+.registration .body .login-form h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #000000;
+}
+.registration .body .login-form input{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #C5C5C5;
+    border-radius: 0;
+    width: 460px;
+    margin-top: 35px;
+}
+.registration .body .login-form input::placeholder{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+}
+.registration .body .login-form .link{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #275A53;
+}
+.registration .body .login-form p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #000000;
+}
+.registration .body .login-form .btn-submit{
+    width: 46rem;
+    height: 5rem;
+    background: #275A53;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.registration .body .login-form .btn-submit:hover{
+    background: #1f443f;
+}
+.registration .body .hr-text{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+}
+.registration .body .hr-text::before,
+.registration .body .hr-text::after{
+    background-color: #AAAAAA;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 250px;
+}
+.registration .body .hr-text::before{
+    right: 0.5em;
+    margin-left: -50%;
+}
+.registration .body .hr-text::after{
+    left: 0.5em;
+    margin-right: -50%;
+}
+.registration .body .auth-login{
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 57px;
+    width: 46rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.registration .body .auth-login img{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    flex: start;
+    /* justify-content: start; */
+}
+.registration .body .auth-login p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Responsive  */
+
+@media (max-width: 526px){
+    .registration .body .login-form{
+        width: 100%;
+    }
+    .registration .body .login-form input{
+        width: 46rem;
+    }
+}
+@media (max-width: 454px){
+    .registration .body .login-form input{
+        width: 40rem;
+    }
+    .registration .body .login-form .btn-submit{
+        width: 40rem;
+    }
+}
+@media (max-width: 414px){
+    .registration .body .login-form input{
+        width: 36rem;
+    }
+    .registration .body .login-form .btn-submit{
+        width: 36rem;
+    }
+    .registration .body .auth-login,
+    .login .body .auth-login{
+        width: 100%;
+    }
+}
+@media (max-width: 375px){
+    .registration .body .login-form input{
+        width: 32rem;
+    }
+    .registration .body .login-form .btn-submit{
+        width: 32rem;
+    }
+}
+@media (max-width: 332px){
+    .registration .body .login-form input{
+        width: 28rem;
+    }
+    .registration .body .login-form .btn-submit{
+        width: 28rem;
+    }
+}
+@media (max-width: 310px){
+    .registration .body .login-form input{
+        width: 22rem;
+    }
+    .registration .body .login-form .btn-submit{
+        width: 22rem;
+    }
+}

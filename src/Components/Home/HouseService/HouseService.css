@@ -1,0 +1,74 @@
+.house-service{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #E5E5E5;
+}
+.house-service .heading p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.0015em;
+    color: #275A53;
+    text-align: center;
+}
+.house-service .heading h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5rem;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #16322E;
+}
+.house-service .body{
+    margin-top: 9rem;
+}
+.house-service .body .service-card{
+    width: 320px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.house-service .body .service-card h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #16322E;
+}
+.house-service .body .service-card p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #606268;
+}
+.house-service .body .service-card img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Responsive  */
+
+@media (max-width: 592px){
+    .house-service .body .service-card{
+        box-shadow: 1px 1px 20px slategray;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    .house-service .body{
+        flex-direction: column;
+        align-items: center;
+    }
+  }

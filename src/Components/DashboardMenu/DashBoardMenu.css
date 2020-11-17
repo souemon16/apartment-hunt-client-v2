@@ -1,0 +1,26 @@
+.menu-bar ul{
+    list-style: none;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.btn-design{
+    margin-left: 600px;
+    background-color:#275A53 !important;
+    
+}
+.upload-img{
+    border: 1px solid #54B781;
+    padding: 5px;
+    background-color: #b5e2dc;
+    margin-bottom: 10px;
+}
+.table-head{
+    background-color: #F5F6FA;
+   color: gray;
+}
