@@ -16,10 +16,10 @@ const Navbar = () => {
             <div className="nav-items d-flex align-items-center">
                 <li><Link className='link' to='/'> Home </Link></li>
                 <li><Link className='link' to=''> About </Link></li>
-                <li><Link className='link' to=''> Service </Link></li>
+                <li><Link className='link' to='/booking-list'> Service </Link></li>
                 <li><Link className='link' to=''> Concerns </Link></li>
-                <li><Link className='link' to=''> Event </Link></li>
-                <li><Link className='link' to=''> Contact </Link></li>
+                <li><Link className='link' to='/add-rent-house'> Event </Link></li>
+                <li><Link className='link' to='/my-rent'> Contact </Link></li>
                 <Link to='/login'><button className="btn login">Login</button></Link>
                 <input type="checkbox" id="nav-res"/>
            <label for='nav-res'> <FontAwesomeIcon className='nav-icon' icon={faBars} /></label>

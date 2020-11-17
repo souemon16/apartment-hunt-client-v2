@@ -1,0 +1,46 @@
+.my-rent{
+    width: 80%;
+    height: 100vh;
+    background-color: #e9ecf8;
+}
+.client-table{
+    background-color: #fff;
+    height: 65vh;
+    border-radius: 5px;
+    width: 900px;
+    margin: 120px 50px;
+    padding: 25px;
+}
+.table{
+    width: 800px;
+    
+}
+.table thead{
+    border-radius: 10px;
+}
+.table th{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #686868;
+}
+.table td{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.0015em;
+}
+.table td .view-details{
+    background: #275A53;
+border-radius: 5px;width: 114px;
+height: 37px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}

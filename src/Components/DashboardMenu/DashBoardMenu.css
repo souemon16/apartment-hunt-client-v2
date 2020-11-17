@@ -1,18 +1,36 @@
-.menu-bar ul{
+.sidebar{
+    width: 20%;
+    height: 100vh;
+}
+.sidebar .logo img{
+    width: 100px;
+    height: 54.8px;
+    margin: 30px 0;
+}
+.menu-bar{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.menu-bar li{
     list-style: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.8rem;
 }
-
-.menu-bar ul li a{
-    text-decoration: none;
+.menu-bar li .link{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 4.8rem;
     color: black;
-    font-weight: bold;
-    font-size: 20px;
-    
+    text-decoration: none;
 }
-.btn-design{
-    margin-left: 600px;
-    background-color:#275A53 !important;
-    
+.menu-bar li .link:active,
+.menu-bar li .link:hover{
+    color: #275A53;
 }
 .upload-img{
     border: 1px solid #54B781;

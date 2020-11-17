@@ -1,0 +1,75 @@
+.add-rent{
+    width: 80%;
+    height: 100vh;
+    background-color: #e9ecf8;
+}
+.top-bar{
+    float: right;
+    background: #fff;
+    width: 100%;
+    height: 100px;
+}
+.top-bar h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    color: #0C0C0C;
+    margin-left: 30px;
+}
+.top-bar h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #0C0C0C;
+    margin-right: 30px;
+}
+
+.add-rent .container .booking-form{
+    margin-top: 30px;
+    background: #FFFFFF;
+border-radius: 20px;
+width: 80rem;
+height: 400px;
+padding: 25px;
+}
+
+.booking-form form input{
+    height: 40px;
+    margin: 20px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+    color: #C9C9C9;
+}
+.booking-form form input::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+    color: #C9C9C9;
+}
+.input-title{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+font-size: 2rem;
+line-height: 0;
+color: #232323;
+}
+
+.booking-form .btn-submit{
+    background: #275A53;
+border-radius: 5px;
+width: 108px;
+height: 37px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}

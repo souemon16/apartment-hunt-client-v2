@@ -1,81 +1,46 @@
 import React from 'react';
-import DashMenuBar from './DashMenuBar';
-import './BookingList.css'
-import logo from '../images/Logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClipboardList,faPlusSquare,faHome } from '@fortawesome/free-solid-svg-icons'
-import './DashBoardMenu.css'
+import './BookingList.css';
+import DashboardMenu from '../DashboardMenu/DashboardMenu';
 
 
 const BookingList = () => {
     return (
-        <div>
-           <div class="container">
-              
-           <div className="row">
-          
-                <div className="col-4">
-                <div class="container">
-                  
-                  <div className="pt-3">
-                     <img style={{height:'60px'}} src={logo} alt=""/>
-                     <p className="book-head">Booking List</p>
-                  </div>
-                 
-  
-                  <div className="pt-5 menu-bar">
-                      <ul>
-                          <li>
-                              <a style={{color:"#648883"}} href="#" active><FontAwesomeIcon icon={faClipboardList} /> Booking list</a>
-                          </li>
-                      </ul>
-  
-                      <ul>
-                          <li>
-                              <a href="#"><FontAwesomeIcon icon={faPlusSquare} /> Add Rent House</a>
-                          </li>
-                      </ul>
-  
-                      <ul>
-                          <li>
-                              <a href="#"><FontAwesomeIcon icon={faHome} />My Rent</a>
-                          </li>
-                      </ul>
-                  </div>
-             </div>
+        <div className="dashboard-section d-flex justify-content-between">
+            <DashboardMenu />
+            <div className="my-booking">
+                <div className="top-bar d-flex justify-content-between align-items-center">
+                    <h1>Booking List</h1>
+                    <h2>Name</h2>
                 </div>
-                
-                <div className="col-8 booking-list-design">
-                    <div className="booking-sub-content">
-                       
-                    <table class="table table-borderless">
-                       <thead>
-                          <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email ID</th>
-                            <th scope="col">Phone No</th>
-                            <th scope="col">Massage</th>
-                            <th scope="col">Status</th>
+
+                <div className="client-table">
+                    <table className="table">
+                        <thead style={{ borderRadius: '10px'}} class="thead-dark">
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email ID</th>
+                                <th scope="col">Phone No</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">Status</th>
                             </tr>
-                       </thead>
+                        </thead>
                         <tbody>
-                             <tr>
-                           <th scope="row">1</th>
-                             <td>Mark</td>
-                             <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Pending</td>
-                             </tr>
-    
-                       </tbody>
-                 </table>
-
-                    </div>
-
+                            <tr>
+                                <th scope="row">Sourav Emon</th>
+                                <td>souemon16@gmail.com</td>
+                                <td> 018****** </td>
+                                <td> Lorem ipsum dolor sit. </td>
+                                <td>  <select id="status" name="Service Status">
+                                        <option className="text-warning" value="On Going">On Going</option>
+                                        <option className="text-danger" value="Pending">Pending</option>
+                                        <option className="text-success" value="Done">Done</option>
+                                    </select> 
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
             </div>
-           </div>
         </div>
     );
 };
