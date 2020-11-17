@@ -1,4 +1,6 @@
 import React from "react";
+import { createContext } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AddRentHouse from "./Components/AddRentHouse/AddRentHose.js";
 import BookingList from "./Components/BookingList/BookingList.js";
@@ -8,45 +10,52 @@ import Login from "./Components/Login/Login.js";
 import MyRent from "./Components/MyRent/MyRent.js";
 import NotFound from "./Components/NotFound/NotFound.js";
 import Registration from "./Components/Registration/Registration.js";
-
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+export const usercontext = createContext();
 function App() {
+  const [userinfo, setUserinfo] = useState({
+    email: "",
+  });
+
   return (
     <>
-      <Router>
-        <Switch>
-          <Route path exact="/">
-            <Homepage />
-          </Route>
+      <usercontext.Provider value={[userinfo, setUserinfo]}>
+        <Router>
+          <Switch>
+            <Route path exact="/">
+              <Homepage />
+            </Route>
 
-          <Route path="/home-detail">
-            <HomeDetail />
-          </Route>
+            <Route path="/home-detail">
+              <HomeDetail />
+            </Route>
 
-          <Route path="/login">
-            <Login />
-          </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
 
-          <Route path="/registration">
-            <Registration />
-          </Route>
+            <Route path="/registration">
+              <Registration />
+            </Route>
 
-          <Route path="/add-rent-house">
-            <AddRentHouse />
-          </Route>
+            <PrivateRoute path="/add-rent-house">
+              <AddRentHouse />
+            </PrivateRoute>
 
-          <Route path="/my-rent">
-            <MyRent />
-          </Route>
+            <PrivateRoute path="/my-rent">
+              <MyRent />
+            </PrivateRoute>
 
-          <Route path="/booking-list">
-            <BookingList />
-          </Route>
+            <PrivateRoute path="/booking-list">
+              <BookingList />
+            </PrivateRoute>
 
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-      </Router>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </Router>
+      </usercontext.Provider>
     </>
   );
 }

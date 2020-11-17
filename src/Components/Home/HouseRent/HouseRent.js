@@ -7,6 +7,8 @@ import house3 from "../../../Images/images/Rectangle 398.png";
 import house4 from "../../../Images/images/Rectangle 403.png";
 import house5 from "../../../Images/images/Rectangle 405.png";
 import house6 from "../../../Images/images/Rectangle 406.png";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const HouseRent = () => {
   const houseData = [
@@ -59,7 +61,17 @@ const HouseRent = () => {
       price: 283,
     },
   ];
+  const [alldata, setAlldata] = useState([]);
 
+  useEffect(() => {
+    fetch("http://localhost:5000/getalldata")
+      .then((res) => res.json())
+
+      .then((data) => {
+        setAlldata(data);
+      });
+  }, []);
+  console.log(alldata);
   return (
     <section className="house-rent">
       <div className="heading">
@@ -69,9 +81,11 @@ const HouseRent = () => {
         </h1>
       </div>
       <div className="body d-flex justify-content-center">
-        {houseData.map((data) => (
-          <HouseData data={data}></HouseData>
-        ))}
+        {alldata.length === 0 ? (
+          <p>loading</p>
+        ) : (
+          alldata.map((data) => <HouseData data={data}></HouseData>)
+        )}
       </div>
     </section>
   );
