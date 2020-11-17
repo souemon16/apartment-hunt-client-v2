@@ -84,7 +84,7 @@ const HouseRent = () => {
         {alldata.length === 0 ? (
           <p>loading</p>
         ) : (
-          alldata.map((data) => <HouseData data={data}></HouseData>)
+          houseData.map((data) => <HouseData data={data}></HouseData>)
         )}
       </div>
     </section>
