@@ -13,7 +13,6 @@
 }
 .table{
     width: 800px;
-    
 }
 .table thead{
     border-radius: 10px;
@@ -43,4 +42,14 @@ font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 color: #FFFFFF;
+}
+
+@media (max-width: 1200px){
+    .client-table{
+        width: 90%;
+}
+@media (max-width: 689px){
+    .client-table{
+        width: 85%;
+    }
 }
