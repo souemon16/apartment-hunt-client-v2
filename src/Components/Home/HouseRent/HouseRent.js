@@ -64,7 +64,7 @@ const HouseRent = () => {
   const [alldata, setAlldata] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/getalldata")
+    fetch("https://morning-falls-70460.herokuapp.com/getalldata")
       .then((res) => res.json())
 
       .then((data) => {
